@@ -170,7 +170,7 @@ const OperateForm: React.FC<Props> = ({ detail = {} as subscribeItem, type }) =>
               value: _.includes(['in', 'not in'], item.func) ? item.value.split(' ') : item.value,
             };
           }),
-          severities: detail.severities || [1, 2, 3],
+          severities: detail.severities || [1, 2, 3, 4],
           redefine_severity: detail?.redefine_severity ? true : false,
           redefine_channels: detail?.redefine_channels ? true : false,
           redefine_webhooks: detail?.redefine_webhooks ? true : false,
@@ -233,7 +233,7 @@ const OperateForm: React.FC<Props> = ({ detail = {} as subscribeItem, type }) =>
               </div>
             </div>
             <div className='filter-settings-row-content'>
-              <Form.Item label={t('severities')} name='severities' initialValue={[1, 2, 3]} rules={[{ required: true, message: t('severities_msg') }]}>
+              <Form.Item label={t('severities')} name='severities' initialValue={[1, 2, 3, 4]} rules={[{ required: true, message: t('severities_msg') }]}>
                 <Checkbox.Group
                   options={[
                     {
@@ -247,6 +247,10 @@ const OperateForm: React.FC<Props> = ({ detail = {} as subscribeItem, type }) =>
                     {
                       label: t('common:severity.3'),
                       value: 3,
+                    },
+                    {
+                      label: t('common:severity.4'),
+                      value: 4,
                     },
                   ]}
                 />
@@ -414,6 +418,7 @@ const OperateForm: React.FC<Props> = ({ detail = {} as subscribeItem, type }) =>
                     <Radio value={1}>{t('common:severity.1')}</Radio>
                     <Radio value={2}>{t('common:severity.2')}</Radio>
                     <Radio value={3}>{t('common:severity.3')}</Radio>
+                    <Radio value={4}>{t('common:severity.4')}</Radio>
                   </Radio.Group>
                 </Form.Item>
               </div>

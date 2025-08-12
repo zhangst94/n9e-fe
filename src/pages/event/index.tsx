@@ -52,7 +52,7 @@ const getFilter = (query) => {
 };
 
 const { confirm } = Modal;
-export const SeverityColor = ['red', 'orange', 'yellow', 'green'];
+export const SeverityColor = ['red', 'orange', 'yellow', 'purple', 'green'];
 export function deleteAlertEventsModal(ids: number[], onSuccess = () => {}, t) {
   confirm({
     title: t('delete_confirm.title'),
@@ -183,6 +183,7 @@ const Event: React.FC = () => {
             <Select.Option value={1}>S1（Critical）</Select.Option>
             <Select.Option value={2}>S2（Warning）</Select.Option>
             <Select.Option value={3}>S3（Info）</Select.Option>
+            <Select.Option value={4}>S4（Notify）</Select.Option>
           </Select>
           <Input
             className='search-input'

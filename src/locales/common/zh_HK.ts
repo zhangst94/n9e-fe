@@ -136,6 +136,7 @@ const zh_HK = {
     '1': '一級報警（Critical）',
     '2': '二級報警（Warning）',
     '3': '三級報警（Info）',
+    '4': '四級報警（Notify）',
   },
   download_json: '下載 JSON',
   batch: {

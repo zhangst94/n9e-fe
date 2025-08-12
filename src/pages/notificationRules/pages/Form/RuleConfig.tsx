@@ -95,6 +95,7 @@ export default function NotifyConfig(props: Props) {
           <Checkbox value={1}>{t('common:severity.1')}</Checkbox>
           <Checkbox value={2}>{t('common:severity.2')}</Checkbox>
           <Checkbox value={3}>{t('common:severity.3')}</Checkbox>
+          <Checkbox value={4}>{t('common:severity.4')}</Checkbox>
         </Checkbox.Group>
       </Form.Item>
       <Form.List {..._.omit(field, 'key')} name={[field.name, 'time_ranges']}>

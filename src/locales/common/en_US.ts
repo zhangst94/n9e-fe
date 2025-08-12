@@ -137,6 +137,7 @@ const en_US = {
     1: 'S1（Critical）',
     2: 'S2（Warning）',
     3: 'S3（Info）',
+    4: 'S4（Notify）',
   },
   download_json: 'Download JSON',
   batch: {

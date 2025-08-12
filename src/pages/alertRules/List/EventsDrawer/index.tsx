@@ -35,7 +35,7 @@ export interface Props {
   onClose: () => void;
 }
 
-const SeverityColor = ['red', 'orange', 'yellow', 'green'];
+const SeverityColor = ['red', 'orange', 'yellow', 'purple', 'green'];
 const fetchData = (rid, filter, { current, pageSize }) => {
   const params: any = {
     p: current,
@@ -344,6 +344,7 @@ export default function index(props: Props) {
             <Select.Option value={1}>S1（Critical）</Select.Option>
             <Select.Option value={2}>S2（Warning）</Select.Option>
             <Select.Option value={3}>S3（Info）</Select.Option>
+            <Select.Option value={4}>S4（Notify）</Select.Option>
           </Select>
           <Input
             style={{ width: 300 }}
@@ -409,7 +410,7 @@ export default function index(props: Props) {
         columns={columns}
         {...tableProps}
         rowClassName={(record) => {
-          return SeverityColor[record.is_recovered ? 3 : record.severity - 1] + '-left-border';
+          return SeverityColor[record.is_recovered ? 4 : record.severity - 1] + '-left-border';
         }}
         rowSelection={{
           selectedRowKeys: selectedRowKeys,

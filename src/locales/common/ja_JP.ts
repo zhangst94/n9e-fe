@@ -137,6 +137,7 @@ const ja_JP = {
     '1': '一次警報（Critical）',
     '2': '二次警報（Warning）',
     '3': '三次警報（Info）',
+    '4': '四次警報（Notify）',
   },
   download_json: 'JSONをダウンロード',
   batch: {

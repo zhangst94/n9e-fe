@@ -124,7 +124,7 @@ const OperateForm: React.FC<Props> = ({ detail = {}, type }: any) => {
       initialValues={{
         ...detail,
         prod: detail.prod || 'metric',
-        severities: detail.severities || [1, 2, 3],
+        severities: detail.severities || [1, 2, 3, 4],
         btime: detail?.btime ? moment(detail.btime * 1000) : moment(btimeDefault),
         etime: detail?.etime ? moment(detail.etime * 1000) : moment(etimeDefault),
         mute_time_type: detail?.mute_time_type || 0,
@@ -213,7 +213,7 @@ const OperateForm: React.FC<Props> = ({ detail = {}, type }: any) => {
             </Form.Item>
           </Col>
         </Row>
-        <Form.Item label={t('severities')} name='severities' initialValue={[1, 2, 3]} rules={[{ required: true, message: t('severities_msg') }]}>
+        <Form.Item label={t('severities')} name='severities' initialValue={[1, 2, 3, 4]} rules={[{ required: true, message: t('severities_msg') }]}>
           <Checkbox.Group
             options={[
               {
@@ -227,6 +227,10 @@ const OperateForm: React.FC<Props> = ({ detail = {}, type }: any) => {
               {
                 label: t('common:severity.3'),
                 value: 3,
+              },
+              {
+                label: t('common:severity.4'),
+                value: 4,
               },
             ]}
           />

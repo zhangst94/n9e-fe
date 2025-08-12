@@ -122,6 +122,7 @@ export default function EventsTable(props: Props) {
             <Select.Option value={1}>S1（Critical）</Select.Option>
             <Select.Option value={2}>S2（Warning）</Select.Option>
             <Select.Option value={3}>S3（Info）</Select.Option>
+            <Select.Option value={4}>S4（Notify）</Select.Option>
           </Select>
           <Select
             style={{ minWidth: 60 }}
@@ -248,7 +249,7 @@ export default function EventsTable(props: Props) {
           },
         }}
         rowClassName={(record: { severity: number; is_recovered: number }) => {
-          return SEVERITY_COLORS[record.is_recovered ? 3 : record.severity - 1] + '-left-border';
+          return SEVERITY_COLORS[record.is_recovered ? 4 : record.severity - 1] + '-left-border';
         }}
       />
     </>

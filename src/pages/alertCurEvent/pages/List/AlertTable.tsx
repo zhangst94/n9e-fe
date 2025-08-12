@@ -320,7 +320,7 @@ export default function AlertTable(props: IProps) {
         columns={columns}
         {...tableProps}
         rowClassName={(record: { severity: number; is_recovered: number }) => {
-          return SEVERITY_COLORS[record.is_recovered ? 3 : record.severity - 1] + '-left-border';
+          return SEVERITY_COLORS[record.is_recovered ? 4 : record.severity - 1] + '-left-border';
         }}
         rowSelection={{
           selectedRowKeys: selectedRowKeys,

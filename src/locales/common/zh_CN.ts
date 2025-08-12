@@ -136,6 +136,7 @@ const zh_CN = {
     1: '一级报警（Critical）',
     2: '二级报警（Warning）',
     3: '三级报警（Info）',
+    4: '四级报警（Notify）',
   },
   download_json: '下载 JSON',
   batch: {

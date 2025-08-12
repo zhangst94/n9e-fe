@@ -142,6 +142,10 @@ export default function DetailNG(props: Props) {
             color: '#f2d204',
             text: '（Info）',
           },
+          4: {
+            color: '#bd5de2',
+            text: '（Notify）',
+          },
         };
         return (
           <Tag color={severityMap[severity].color}>

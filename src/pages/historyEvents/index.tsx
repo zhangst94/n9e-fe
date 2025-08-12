@@ -317,6 +317,7 @@ const Event: React.FC = () => {
                   <Select.Option value={1}>S1（Critical）</Select.Option>
                   <Select.Option value={2}>S2（Warning）</Select.Option>
                   <Select.Option value={3}>S3（Info）</Select.Option>
+                  <Select.Option value={4}>S4（Notify）</Select.Option>
                 </Select>
                 <Select
                   style={{ minWidth: 60 }}
@@ -379,7 +380,7 @@ const Event: React.FC = () => {
             columns={columns}
             {...tableProps}
             rowClassName={(record: { severity: number; is_recovered: number }) => {
-              return SeverityColor[record.is_recovered ? 3 : record.severity - 1] + '-left-border';
+              return SeverityColor[record.is_recovered ? 4 : record.severity - 1] + '-left-border';
             }}
             pagination={{
               ...pagination,

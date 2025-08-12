@@ -215,6 +215,11 @@ const AlertCurEvent: React.FC = () => {
                             S3（Info）
                           </Checkbox>
                           <br />
+                          <Checkbox className='py-1' value={4}>
+                            <div className='inline-block mr-2 w-[4px] h-[12px] rounded-lg event-card-circle purple' />
+                            S4（Notify）
+                          </Checkbox>
+                          <br />
                         </Checkbox.Group>
                       </Collapse.Panel>
                     </Collapse>

@@ -7,7 +7,7 @@ export const DEFAULT_VALUES = {
   enable: true,
   notify_configs: [
     {
-      severities: [1, 2, 3],
+      severities: [1, 2, 3, 4],
     },
   ],
 };

@@ -245,7 +245,7 @@ export default function TableCpt(props: IProps) {
           columns={columns}
           {...tableProps}
           rowClassName={(record: { severity: number; is_recovered: number }) => {
-            return SeverityColor[record.is_recovered ? 3 : record.severity - 1] + '-left-border';
+            return SeverityColor[record.is_recovered ? 4 : record.severity - 1] + '-left-border';
           }}
           rowSelection={{
             selectedRowKeys: selectedRowKeys,
